@@ -1,0 +1,911 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+
+
+body{
+    background-color: #eeeeee;
+}
+body, footer, section.brScnSearch{
+    background-image: url(../images/noisebg.png);
+}
+body *{
+    font-family: 'Arial';
+}
+ul, li{
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #f8f8f8;
+    border-top: solid thin #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+footer *{
+    color: #666;
+}
+
+
+.symbol{
+    font-family: 'WebSymbolsRegular';
+}
+
+form#brDomainSearchForm {
+    padding-top: 20px;
+    padding-right: 2px;
+}
+form#brDomainSearchForm input[type="text"]{
+    width: 92%;
+    font-size: 1.5em;
+    float: left;
+    border: none;
+    height: 26px;
+}
+form#brDomainSearchForm input[type="text"]:focus{
+    box-shadow: none;
+}
+form#brDomainSearchForm button[type="submit"]{
+    font-family: 'WebSymbolsRegular';
+    display: show;
+    float: right;
+    height: 30px;
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    margin-left: 0px;
+    width: 33px;
+}
+
+.brSearchBar {
+    width: 100%;
+    height: 38px;
+    position: relative;
+    border: solid thin #999;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+}
+.brSearchBar input[type="text"]{
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.brSearchBar div#brDomainSearchBarInfo{
+    position: absolute;
+    font-size: 1.5em;
+    padding-top: 9px;
+    padding-left: 4px;
+    z-index: 0;
+    color: #999;
+}
+
+.brProducts{
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-family: 'Arial';
+}
+section.brScnSearch .brProducts span.symbol{
+    padding-left: 20px;
+}
+
+section.brScnSearch .brProducts{
+    margin-top: 20px;
+}
+
+header{
+    background-color: #fff;
+    height: auto;
+    
+    border-bottom: solid thin #ddd;
+}
+
+section.brScnSearch{
+    background-color: #f8f8f8;
+    border-bottom: solid thin #ccc;//#FAB074;
+
+}
+
+div#brLogo{
+    position: relative;
+    width: 227px;
+    height: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+div#brLogo a{
+    display: block;
+}
+div#brLogo a:focus{
+    outline: solid thin #FAB074;
+}
+div#brLogo img{
+    width: 100%;
+    position: relative;
+}
+
+ul.brMenu{
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+ul.brMenu li{
+    width: 33.33333%;
+    position: relative;
+    float: left;
+}
+ul.brMenu li a{
+    width: 100%;
+    font-family: 'Arial';
+    font-size: 1.2em;
+    position: relative;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    color: #666;
+    border-radius: 5px; 
+    //transition: background-color 0.1s;
+}
+ul.brMenu li a:focus{
+    background-color: #FAB074;
+    color: #fff;
+}
+ul.brMenu li a:hover{
+    background-color: #F58634;
+    color: #fff;
+}
+
+div.footerNav{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+div.footerNav ul li{
+    margin-bottom: 15px;
+}
+div.footerNav ul li a{
+    color: #666;
+}
+div.footerNav ul li a:hover{
+    color: #F58634;
+}
+.footerNav.dark{
+    background-color: #d6d6d6;
+}
+.footerNav.dark hr{
+    border-color: #fff;
+}
+
+
+form#footerCS{
+    margin:20px;
+}
+form#footerCS select{
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ul.cap{
+    width: 100%;
+    position: relative;
+    border-bottom: solid thin #666;
+}
+
+ul.cap li{
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    text-align: center;
+    height: 20px;
+}
+ul.cap li a{
+    cursor: pointer;
+}
+ul.cap li a:hover{
+    color: #F58634;
+}
+ul.cap li.icon{
+    width: 15%;
+    background-color: #666;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+ul.cap li.name{
+    width: 55%;
+}
+
+ul.cap li.opt{
+    width: 30%;
+}
+
+
+ul.cap li.icon div.carticon{
+    background-image: url(../images/cart.png);
+    width: 22px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.mac{
+    background-color: #F58634;
+    color: #fff;
+    height: 20px;
+    border-top: solid thin #666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(../images/noisebg.png);
+    border-radius: 0px 0px 5px 5px;
+}
+a.mac:hover{
+    background-color: #999;
+}
+
+div#brDropDownMenuContainer{
+    position: absolute;
+    z-index: 10;
+    float: left;
+    background-color: transparent;
+    display: none;
+}
+ul.brDropDownMenu{
+
+    position: relative;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.92);
+    width: 180px;
+    float: left;
+    
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 20px #333;
+}
+ul.brDropDownMenu > li{
+    float: left;
+
+    width: 100%;
+}
+
+ul.brDropDownMenu > li > a{
+    padding-top:10px;
+    padding-bottom: 10px;
+    cursor: default;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+ul.brDropDownMenu > li > a:hover{
+    background-color: #C15300;
+}
+ul.brDropDownMenu > li > a.selected{
+    background-color: #333;
+}
+ul.brDropDownMenu > li > div.subMenuContainer{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.92);
+    float: left;
+    height: 100%;
+    display: none;
+    border-radius: 0px 0px 5px 5px;
+}
+ul.brDropDownMenu > li > div.subMenuContainer div.bunch{
+    width:570px;
+    float: left;
+    padding-top: 10px;
+}
+ul.subMenu{
+    float: left;
+    width: 180px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+ul.subMenu h5{
+    color: #fff;
+    float: left;
+    width: 180px;
+    text-align: center;
+    border-bottom: solid thin #ccc;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+ul.subMenu li{
+    float: left;
+    width: 180px;
+}
+ul.subMenu li a{
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+ul.subMenu li a:hover{
+    background-color: #C15300;
+}
+
+div.heading{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ccc;
+    background-image: url(../images/noisebg.png);
+    border-bottom: solid thin #666;
+    color: #666;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+div.heading h4{
+    color: #333;
+}
+
+/* #Page Styles
+================================================== */
+
+/*
+    index page style
+*/
+
+div#brGetOnline{
+    text-align: center;
+}
+div#brGetOnline h1{
+    color: #548B33;
+}
+div#brGetOnline h4{
+    color: #666;
+}
+
+div.brBanner{
+    border: solid thin #ccc;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+    border-radius: 10px;
+
+}
+div.brBanner hr{
+    margin-bottom: 10px;
+}
+div.brBanner h2{
+    color: #666;
+}
+div.brBanner h2 span.orange{
+    color: #E77817;
+}
+div.brBanner h4, div.brBanner h5{
+    color: #666;
+}
+div.brBanner a.button{
+    margin-top: 20px;
+}
+
+#slides a img{
+    width: 100%;
+    position: relative;
+}
+
+#slides {
+  display: none
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../images/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+
+/*
+    end of index style
+*/
+/*
+    general style
+*/
+
+div.brNavOption{
+    border: solid thin #ccc;
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+    border-radius: 10px;
+
+}
+div.brNavOption div.noIcon{
+    width:35px;
+    height: 35px;
+    background-image: url(../images/navOption_1.jpg);
+    margin-left: auto;
+    margin-right: auto;
+}
+div.brNavOption h5{
+    color: #666;
+}
+div.brNavOption ul{
+
+}
+div.brNavOption ul li{
+    
+}
+div.brNavOption ul li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    cursor: pointer;
+}
+div.brNavOption ul li a:hover{
+    background-color: #ececec;
+}
+div.brNavOption ul li a span{
+    margin: 0px;
+    color: #666;
+    display: block;
+}
+div.brNavOption ul li a span.bold{
+    font-weight: bold;
+}
+
+
+/*
+    end of general style
+*/
+
+div.catgr{
+
+}
+div.catgr ul{
+
+    width: 100%;
+    border-bottom: solid thin #F58634;
+    float: left;
+}
+
+div.catgr ul li{
+    width: 25%;
+    position: relative;
+    float: left;
+}
+div.catgr ul li a{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;;
+    float: left;
+    cursor: pointer;
+    font-size: bold;
+    border-radius: 5px 5px 0px 0px;
+}
+div.catgr ul li a:hover{
+    color: #fff;
+    background-color: #FAB074;
+}
+div.catgr ul li a.selected{
+    color: #fff;
+    background-color: #F58634;
+    background-image: url(../images/noisebg.png);
+}
+
+.cath{
+    color: #666;
+}
+
+div.cart{
+    display: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: solid thin #ccc;
+    padding:10px;
+    border-radius: 5px;
+
+}
+div.cart button{
+    margin: 0px;
+}
+div.cart h5{
+    text-align: center;
+    color: #666;
+}
+div.cart ul.cproduct {
+
+}
+div.cart ul.cproduct li{
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+div.cart ul.cproduct li:hover{
+    background-color: #ececec;
+}
+
+div.cart ul.cproduct li div.pname{
+    width: 90%;
+    position: relative;
+    float: left;
+}
+div.cart ul.cproduct li div.pact{
+    width: 10%;
+    position: relative;
+    float:left;
+}
+div.cart ul.cproduct li div.pname span{
+    padding-left: 10px;
+}
+div.cart ul.cproduct li div.pact span{
+    margin-right: 10px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    padding-left: 3px;
+    padding-right: 3px; 
+    border-radius: 2px;
+    font-size: 10px;
+}
+div.cart ul.cproduct li div.pact span:hover{
+    color: #fff;
+    /*background-color: #666;*/
+    background-color: #CA4836;
+}
+div.cart a.co{
+    color: #1A38B0;
+
+}
+div.cart .button{
+    margin: 0px;
+}
+
+
+div.domainContainer{
+
+}
+div.domain.green div.dupper, div.domain.green div.dname {    color: #366E00;    }
+div.domain.blue div.dupper, div.domain.blue div.dname  {    color: #1A38B0;    }
+div.domain.orange div.dupper, div.domain.orange div.dname{    color:#C15300;    }
+div.domain.green {
+    background-color: #F4FFF4;
+}
+div.domain.gray{
+    background-color: #F8F8F8;
+}
+div.domain.blue{
+    background-color: #F1F7FF;//#FFF0FD
+}
+div.domain.orange{
+    background-color: #FFF5EA;
+}
+div.domain{
+    padding:10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: solid thin #ccc;
+    border-radius: 5px;
+}
+
+div.domain div.dsym, div.domain div.dname{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+
+}
+div.domain div.dopt{
+    width: 100%;
+    text-align: center;
+
+}
+div.domain div.dact{
+    width: 100%;
+}
+div.domain div.dsym{
+    margin-bottom: 10px;
+}
+div.dupper{
+    width: 100%;
+    position: relative;
+}
+div.dlower{
+    border-top: solid thin #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+div.domain button{
+    margin: 0px;
+
+}
+div.domain select{
+    width: 180px;
+    padding: 5px;
+    float: right;
+}
+div.domain span.symbol{
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+
+div.domain button.add{
+    /*color: #366E00;*/
+
+}
+div.domain button.remove{
+    color: #CA4836;
+
+}
+
+
+
+
+div.cartBill, div.cartItem{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: solid thin #ccc;
+    padding:10px;
+    border-radius: 5px;
+}
+div.cartBill{
+    background-color: #f8f8f8;
+}
+
+div.cartItem div.pname, div.cartItem div.pdes, div.cartItem div.pcost{
+    text-align: center;
+}
+div.cartItem div.pdes span.orange{
+    color: #F58220;
+}
+div.cartItem div.pdes span.blue{
+    color: #1A38B0;
+}
+div.cartItem div.pname span{
+    font-size: 24px;
+    /*color: #C15300;*/
+    color: #666;
+}
+div.cartItem div.pcost span{
+    font-size: 20px;
+    color: #366E00;
+}
+
+div.cartItem form{
+    width: 278px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.cartItem button{
+    margin: 0px;
+}
+div.cartItem form input[type="text"], div.cartItem form input[type="password"]{
+    width: 268px;
+    
+}
+div.cartItem form div.cont{
+    margin-bottom: 20px;
+}
+div.cartItem form a.formlink{
+    color: #1A38B0;
+    cursor: pointer;
+}
+div.cartItem form a.formlink:hover{
+    text-decoration: underline;
+}
+div.cartItem form input#brCSU_PhoneCode{
+    width: 30px;
+    float: left;
+}
+div.cartItem form input#brCSU_Phone{
+    width: 220px;
+    float: right;
+
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Larger than standard 960 (devices and browsers) */
+	@media only screen and (min-width: 960px) {
+        .stm{
+            display: none;
+        }
+
+	
+	}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+	
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	    div#brLogo{
+	        width: 100%;
+	        padding-right: 0px;
+	        padding-left: 0px;
+	    }
+	    form#brDomainSearchForm input[type="text"]{
+	        width: 90%;
+	    }
+        .stm{
+            display: none;
+        }
+	
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	    .stl{
+	        display: none;
+	    }
+        .stm{
+            display: show;
+        }
+        .cart{
+            //display: none;
+        }
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	    form#brDomainSearchForm input[type="text"]{
+	        width: 88%;
+	    }
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	    form#brDomainSearchForm input[type="text"]{
+	        width: 84%;
+	    }
+        ul.brMenu li{
+            width: 50%;
+        }
+
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+	@font-face {
+	    font-family: 'Arial';
+	    src: url('../fonts/font_arial/arial-webfont.eot');
+	    src: url('../fonts/font_arial/arial-webfont.eot?iefix') format('eot'),
+	         url('../fonts/font_arial/arial-webfont.woff') format('woff'),
+	         url('../fonts/font_arial/arial-webfont.ttf') format('truetype'),
+	         url('../fonts/font_arial/arial-webfont.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+	@font-face {
+	    font-family: 'CapricornOSF';
+	    src: url('../fonts/font_capricornosf/capricornosf-webfont.eot');
+	    src: url('../fonts/font_capricornosf/capricornosf-webfont.eot?iefix') format('eot'),
+	         url('../fonts/font_capricornosf/capricornosf-webfont.woff') format('woff'),
+	         url('../fonts/font_capricornosf/capricornosf-webfont.ttf') format('truetype'),
+	         url('../fonts/font_capricornosf/capricornosf-webfont.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+	@font-face {
+	    font-family: 'LucidaGrande';
+	    src: url('../fonts/font_lucidagrande/lucidagrande-webfont.eot');
+	    src: url('../fonts/font_lucidagrande/lucidagrande-webfont.eot?iefix') format('eot'),
+	         url('../fonts/font_lucidagrande/lucidagrande-webfont.woff') format('woff'),
+	         url('../fonts/font_lucidagrande/lucidagrande-webfont.ttf') format('truetype'),
+	         url('../fonts/font_lucidagrande/lucidagrande-webfont.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+	@font-face {
+	    font-family: 'Annifont';
+	    src: url('../fonts/font_annifont/annifont-webfont.eot');
+	    src: url('../fonts/font_annifont/annifont-webfont.eot?iefix') format('eot'),
+	         url('../fonts/font_annifont/annifont-webfont.woff') format('woff'),
+	         url('../fonts/font_annifont/annifont-webfont.ttf') format('truetype'),
+	         url('../fonts/font_annifont/annifont-webfont.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+	    
+    @font-face{ 
+	    font-family: 'WebSymbolsRegular';
+	    src: url('../fonts/websymbols/websymbols-regular-webfont.eot');
+	    src: url('../fonts/websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/websymbols/websymbols-regular-webfont.woff') format('woff'),
+	         url('../fonts/websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+	         url('../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+	    }

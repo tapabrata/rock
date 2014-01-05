@@ -1,0 +1,40 @@
+Please see README.pdf
+
+NOTE : 
+
+Third party resources used to make the interface :
+1. CSS 		: 	Skeleton
+2. JS 		: 	Jquery, Jquery.Slides, Prefix Free, Modernizr, Respond
+3. FONTS	: 	Websymbols, Arial, Lucida Grande, Annifont, Capricorn OSF
+4. IMAGES	: 	icann.png, verisign.png
+
+Links to look into if found necessary :
+1. http://www.getskeleton.com/ (skeleton css framework)
+2. http://slidesjs.com/ (jquery.slides)
+3. http://leaverou.github.io/prefixfree/ (Prefix Free)
+4. http://modernizr.com/ (Modernizr)
+5. https://github.com/scottjehl/Respond (Respond)
+
+frontend/js/frameworks.combined.js is a combination of 
+1. jquery-1.10.2.min.js
+2. modernizr.js
+3. prefixfree.min.js
+4. respond.min.js
+
+frontend/js/behaviour.js contains the functioning of interface elements such as 
+1. Hiding and showing dropdown menu on cliking Products button.
+2. Hiding and showing mini cart.
+
+backend folder contains interface elements broken into several sections (html structure enclosed in php files), when properly combined, generates proper output as done in the following files :
+1. cart.php
+2. domain.php
+3. domainsearch.php
+4. hosting.php
+5. index.php
+6. signin.php
+7. signup.php
+
+
+
+The files only contain the visual design for different sections of website.
+
